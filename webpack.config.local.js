@@ -5,7 +5,7 @@ const packageName = require('./package.json').name;
 module.exports = merge(config, {
     mode: "development",
     output: {
-        filename: "[name].bundle.js",
+        filename: "[name].js",
         path: path.resolve(__dirname, "dist"),
         library: `${packageName}-[name]`,
         libraryTarget: 'umd',
